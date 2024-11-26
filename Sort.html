@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+
+    <title></title>
+
+</head>
+
+<body>
+<h2>Javascript Arrays</h2>
+<button onclick="ascending()">Ascending Order</button>
+<button onclick="descending()">Descending Order</button>
+<p id="result"></p>
+<script>
+var points=[30,14,27,5,9,7,10]
+document.getElementById("result").innerHTML=points;
+function ascending() {
+points.sort(function(a,b){return a-b});
+document.getElementById("result").innerHTML=points;
+}
+function descending(){
+    points.sort(function (a, b) { return b - a });
+    document.getElementById("result").innerHTML = points;
+
+
+
+}
+</script>
+
+
+
+
+
+
+
+</body>
+
+</html>
